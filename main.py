@@ -39,7 +39,7 @@ def clean():
     entry_date.delete(0, END)
     entry_month.delete(0, END)
     entry_year.delete(0, END)
-    button = Button(root, text="CLEAR", width=10, command=clean, bg="green", borderwidth=4)
+    button = Button(root, text="CLEAR", width=10, command=clean, bg="#E21717", borderwidth=4)
 
 title_label = Label(root,text="AGE CALCULATOR",borderwidth=5)
 title_label.config(font=("Arial",28))
@@ -69,10 +69,10 @@ user_date = entry_date.get()
 user_month = entry_month.get()
 user_year = entry_year.get()
 
-final = Button(root,text="GIVE AGE !!",width=10,anchor=CENTER,command=lambda:calculateAge(user_date,user_month,user_year),bg="red",borderwidth=4)
+final = Button(root,text="GIVE AGE !!",width=10,anchor=CENTER,command=lambda:calculateAge(user_date,user_month,user_year),bg="#5DA3FA",borderwidth=4)
 final.grid(row=4,column=0)
 
-clear_button = Button(root,text="CLEAR",width=10,command=clean, bg="green",borderwidth=4)
+clear_button = Button(root,text="CLEAR",width=10,command=clean, bg="#E21717",borderwidth=4)
 clear_button.grid(row=4,column=2)
 
 root.mainloop()
